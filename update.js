@@ -62,7 +62,7 @@ ELMAH.checkForUpdate = function(info) {
         return new Version(v.shift(), v.shift(), v.shift(), v.shift());
     };
 
-    var currentVersion = Version.parse('1.2.14318');
+    var currentVersion = Version.parse('1.2.14706');
     if (Version.parse(info.fileVersion).compareTo(currentVersion) < 0) {
         if (confirm(
             'Your version of ELMAH is out of date. ' +
